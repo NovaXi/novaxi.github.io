@@ -5,54 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NovaXi — SCR</title>
   <meta name="description" content="NovaXi's Site - Moderator & Signaller at SCR">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   
-  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 
   <style>
-    /* Use CSS variables for colors defined in styles.css for consistency */
     .brand small { color: var(--muted); }
-    .card p b:not([style]) { color: #fff; } /* Target unstyled bold text */
+    .card p b:not([style]) { color: #fff; }
     .card p b[style*="var(--accent)"] { color: var(--accent); }
     .card p[style*="var(--muted)"] { color: var(--muted); }
     .card ul { list-style-type: disc; margin-left: 20px; }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div id="home" class="container">
     <header>
       <div class="brand">
         <h1>NovaXi</h1>
-        <small>Moderator & Signaller — SCR</small>
+        <small>Moderator & Signaller @ <b>SCR</b></small>
         <nav>
-          <a href="#">Accueil</a>
+          <a href="#home">Home</a>
           <a href="#rank">Rank History</a>
+          <a href="#application">Application Attempt</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <img 
-          src="https://lh3.googleusercontent.com/sitesv/AAzXCkf1G4oawf9rlSGsDr6ZJ_k-eTQrreg2ogodEnitBjlRHNBWji3Sdi5Ej7ON_z4v0kniLStZ4wz6qL1pNrPnZdLX8BarymzG9tPUHiEZoJV-btNhgDl0KFDmJZ_ELlNCzz8pka_TlVE-qNKNqAyTNZUU74Em5f-76Xoxscz2GxlKPIGQVptJl_b4wyDS_uZYfm86Ol3yRUMwzmbqT7Ex-Eylm1CoGOgHZW1xjE8%3Dw1280" 
-          alt="SCR signallers group photo"
-          onerror="this.onerror=null;this.src='https://placehold.co/420x280/111827/9ca3af?text=SCR+Placeholder+Image';"
-        >
+        <!-- <img src="https://lh3.googleusercontent.com/sitesv/AAzXCkf1G4oawf9rlSGsDr6ZJ_k-eTQrreg2ogodEnitBjlRHNBWji3Sdi5Ej7ON_z4v0kniLStZ4wz6qL1pNrPnZdLX8BarymzG9tPUHiEZoJV-btNhgDl0KFDmJZ_ELlNCzz8pka_TlVE-qNKNqAyTNZUU74Em5f-76Xoxscz2GxlKPIGQVptJl_b4wyDS_uZYfm86Ol3yRUMwzmbqT7Ex-Eylm1CoGOgHZW1xjE8%3Dw1280" alt="SCR signallers group photo" onerror="this.onerror=null;this.src='https://placehold.co/420x280/111827/9ca3af?text=Error+Loading+Image';"> -->
         <div style="flex:1">
           <div class="card">
             <h2>Who am I?</h2>
-            <p>Hello!<br>Welcome to my site! I'm <b>NovaXi</b>, a <b style="color:var(--accent)">Moderator</b> and a <b style="color:var(--accent)">Signaller</b> here at SCR! I'm in charge of the moderation of the SCR Official Discord server, making sure the server stays welcoming and safe for everyone.</p>
+            <p>Hello!<br>Welcome to my site! I'm <b>NovaXi</b>, a <b><span class="MOD_COLOUR">Moderator</span></b> and a <b><span class="SG_COLOUR">Signaller</span></b> here at SCR! I'm in charge of the moderation of the SCR Official Discord server, making sure the server stays welcoming and safe for everyone.</p>
 
             <h3 class="section-title">Need help?</h3>
             <p>You have 2 ways to reach SCR's Supervisor and Moderator Team:</p>
             <ul>
-              <li>For urgent matters, feel free to ping an available Mod/SV in <code>#general</code>.</li>
-              <li>For non urgent matters, feel free to open a ticket using <code>#ticket-info</code>.</li>
+              <li><span class="QD_COLOUR"><b>For urgent matters</b></span>, feel free to ping an available <span class="MOD_COLOUR">Mod</span>/<span class="SV_COLOUR">SV</span> in <code># general</code>.</li>
+              <li><span class="SG_COLOUR"><b>For non urgent matters</b></span>, feel free to open a ticket using <code># ticket-info</code>.</li>
             </ul>
-
-            <p style="margin-top:14px;color:var(--muted)">Thanks to @coaster.oliver for the inspiration!</p>
-            <footer>Last Updated: 26/10/2025</footer>
           </div>
         </div>
       </section>
@@ -60,49 +54,115 @@
       <section id="rank" style="margin-top:30px">
         <div class="card">
           <h2>Rank History</h2>
-          <p>This section showcases my journey and progression through the ranks in <b>Stepford County Railway</b>.</p>
-
           <table>
             <thead>
               <tr>
                 <th>Rank</th>
-                <th>Date Promoted</th>
+                <th>From the</th>
+                <th>Until the</th>
+                <th>Total days</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td><b>Dispatcher</b></td>
-                <td>November 2023</td>
+                <td><b><span class="QD_COLOUR">Qualified Driver</span></b></td>
+                <td>28/09/2022</td>
+                <td>22/01/2023</td>
+                <td>116 days</td>
               </tr>
               <tr>
-                <td><b>Signaller</b></td>
-                <td>January 2024</td>
+                <td><b><span class="DS_COLOUR">Dispatcher</span></b></td>
+                <td>22/01/2023</td>
+                <td>24/01/2023</td>
+                <td>2 days</td>
               </tr>
               <tr>
-                <td><b>Senior Signaller</b></td>
-                <td>March 2024</td>
+                <td><b><span class="GD_COLOUR">Guard</span></b></td>
+                <td>24/01/2023</td>
+                <td>04/09/2023</td>
+                <td>223 days</td>
               </tr>
               <tr>
-                <td><b>Trainer</b></td>
-                <td>June 2024</td>
+                <td><b><span class="SG_COLOUR">Trainee Signaller</span></b></td>
+                <td>26/08/2023</td>
+                <td>04/09/2023</td>
+                <td>9 days</td>
               </tr>
               <tr>
-                <td><b>Moderator</b></td>
-                <td>September 2024</td>
+                <td><b><span class="SG_COLOUR">Signaller</span></b></td>
+                <td>04/09/2023</td>
+                <td>21/02/2025</td>
+                <td>536 days</td>
+              </tr>
+              <tr>
+                <td><b><span class="SG_COLOUR">Signaller</span> & <span class="MOD_COLOUR">Moderator</span></b></td>
+                <td>21/02/2025</td>
+                <td>now</td>
+                <td>~ 8 months</td>
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
 
-          <p style="margin-top:16px;color:var(--muted)">This timeline reflects my dedication to the Stepford County Railway community and its continued development.</p>
+      <section id="application" style="margin-top:30px">
+        <div class="card">
+          <h2>Application Attempt</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Batch</th>
+                <th>Application Type</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>June 2023</td>
+                <td><b><span class="GD_COLOUR">SV-GD</span></b></td>
+                <td><b><span class="QD_COLOUR">Failed</span></b> (Theory)</td>
+              </tr>
+              <tr>
+                <td>July 2023</td>
+                <td><b><span class="SG_COLOUR">SG</span></b></td>
+                <td><b><span class="SG_COLOUR">Passed</span></b></td>
+              </tr>
+              <tr>
+                <td>October 2024</td>
+                <td><b><span class="GD_COLOUR">SV-GD</span></b></td>
+                <td><b><span class="QD_COLOUR">Failed</span></b> (Manager Stage)</td>
+              </tr>
+              <tr>
+                <td>November 2024</td>
+                <td><b><span class="MOD_COLOUR">Moderator</span></b></td>
+                <td><b><span class="SG_COLOUR">Passed</span></b></td>
+              </tr>
+              <tr>
+                <td><i>April 2025</i></td>
+                <td><b><i><span class="SG_COLOUR">SV-SG</span></b></i></td>
+                <td><i><span class="MOD_COLOUR">Awaiting Results</span></i></td>
+              </tr>
+              <tr>
+                <td>May 2025</td>
+                <td><b><span class="DS_COLOUR">SV-DS</span></b></td>
+                <td><b><span class="QD_COLOUR">Failed</span></b> (Theory)</td>
+              </tr>
+              <tr>
+                <td>July 2025</td>
+                <td><b><span class="GD_COLOUR">SV-GD</span></b></td>
+                <td><b><span class="QD_COLOUR">Failed</span></b> (Manager Stage)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </main>
-
     <footer style="text-align:center;margin-top:22px;color:var(--muted)">
-      <small>Site originally hosted on Google Sites — static copy created.</small>
+        <small>Thanks to @coaster.oliver for the inspiration!</small><br>
+        <small><b>Last Updated: 31/10/2025</b></small>
     </footer>
   </div>
   
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
