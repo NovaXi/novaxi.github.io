@@ -1,3 +1,3 @@
 # novaxi.github.io
 
-https://novaxi.github.io/
+https://novaxi.github.io/#home
