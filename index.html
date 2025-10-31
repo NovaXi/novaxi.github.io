@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaXi — SCR</title>
+  <meta name="description" content="NovaXi's Site - Moderator & Signaller at SCR">
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* Use CSS variables for colors defined in styles.css for consistency */
+    .brand small { color: var(--muted); }
+    .card p b:not([style]) { color: #fff; } /* Target unstyled bold text */
+    .card p b[style*="var(--accent)"] { color: var(--accent); }
+    .card p[style*="var(--muted)"] { color: var(--muted); }
+    .card ul { list-style-type: disc; margin-left: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <h1>NovaXi</h1>
+        <small>Moderator & Signaller — SCR</small>
+        <nav>
+          <a href="#">Accueil</a>
+          <a href="#rank">Rank History</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img 
+          src="https://lh3.googleusercontent.com/sitesv/AAzXCkf1G4oawf9rlSGsDr6ZJ_k-eTQrreg2ogodEnitBjlRHNBWji3Sdi5Ej7ON_z4v0kniLStZ4wz6qL1pNrPnZdLX8BarymzG9tPUHiEZoJV-btNhgDl0KFDmJZ_ELlNCzz8pka_TlVE-qNKNqAyTNZUU74Em5f-76Xoxscz2GxlKPIGQVptJl_b4wyDS_uZYfm86Ol3yRUMwzmbqT7Ex-Eylm1CoGOgHZW1xjE8%3Dw1280" 
+          alt="SCR signallers group photo"
+          onerror="this.onerror=null;this.src='https://placehold.co/420x280/111827/9ca3af?text=SCR+Placeholder+Image';"
+        >
+        <div style="flex:1">
+          <div class="card">
+            <h2>Who am I?</h2>
+            <p>Hello!<br>Welcome to my site! I'm <b>NovaXi</b>, a <b style="color:var(--accent)">Moderator</b> and a <b style="color:var(--accent)">Signaller</b> here at SCR! I'm in charge of the moderation of the SCR Official Discord server, making sure the server stays welcoming and safe for everyone.</p>
+
+            <h3 class="section-title">Need help?</h3>
+            <p>You have 2 ways to reach SCR's Supervisor and Moderator Team:</p>
+            <ul>
+              <li>For urgent matters, feel free to ping an available Mod/SV in <code>#general</code>.</li>
+              <li>For non urgent matters, feel free to open a ticket using <code>#ticket-info</code>.</li>
+            </ul>
+
+            <p style="margin-top:14px;color:var(--muted)">Thanks to @coaster.oliver for the inspiration!</p>
+            <footer>Last Updated: 26/10/2025</footer>
+          </div>
+        </div>
+      </section>
+
+      <section id="rank" style="margin-top:30px">
+        <div class="card">
+          <h2>Rank History</h2>
+          <p>This section showcases my journey and progression through the ranks in <b>Stepford County Railway</b>.</p>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Date Promoted</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Dispatcher</b></td>
+                <td>November 2023</td>
+              </tr>
+              <tr>
+                <td><b>Signaller</b></td>
+                <td>January 2024</td>
+              </tr>
+              <tr>
+                <td><b>Senior Signaller</b></td>
+                <td>March 2024</td>
+              </tr>
+              <tr>
+                <td><b>Trainer</b></td>
+                <td>June 2024</td>
+              </tr>
+              <tr>
+                <td><b>Moderator</b></td>
+                <td>September 2024</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p style="margin-top:16px;color:var(--muted)">This timeline reflects my dedication to the Stepford County Railway community and its continued development.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer style="text-align:center;margin-top:22px;color:var(--muted)">
+      <small>Site originally hosted on Google Sites — static copy created.</small>
+    </footer>
+  </div>
+  
+  <script src="script.js" defer></script>
+</body>
+</html>
