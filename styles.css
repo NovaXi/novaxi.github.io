@@ -146,6 +146,18 @@ code {
   word-break: break-all;
 }
 
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+
 .QD_COLOUR {
   color: var(--qd_colour);
 }
