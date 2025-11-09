@@ -1,0 +1,209 @@
+/* === Base layout === */
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  overflow: hidden
+}
+
+/* === Headings === */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+/* === Timer === */
+.timer {
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+  color: #f8fafc;
+  transition: all 0.3s ease;
+}
+.graceTimer {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin-bottom: 1.5rem;
+  color: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.timer.alert {
+  animation: flashAlert 1s infinite;
+}
+
+.timer.setup {
+  animation: flashSetup 3s infinite;
+}
+
+.timer.time {
+  animation: flashTime 3s infinite;
+}
+
+/* === Buttons (General Style) === */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  font-size: 1rem;
+  color: #fff;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+
+/* === Specific Button Colors === */
+#assessmentBtn {
+  background: #2563eb;
+}
+#assessmentBtn:hover {
+  background: #1d4ed8;
+}
+
+#practicalGBtn,
+#practicalAandDBtn {
+  background: #16a34a;
+}
+#practicalGBtn:hover,
+#practicalAandDBtn:hover {
+  background: #15803d;
+}
+
+#startBtn, #startGraceBtn {
+  background: #059669;
+}
+#startBtn:hover, #startGraceBtn:hover {
+  background: #047857;
+}
+
+#pauseBtn, #pauseGraceBtn {
+  background: #eab308;
+  color: #111827;
+}
+#pauseBtn:hover, #pauseGraceBtn:hover {
+  background: #ca8a04;
+}
+
+#resetBtn, #resetGraceBtn {
+  background: #dc2626;
+}
+#resetBtn:hover, #resetGraceBtn:hover {
+  background: #b91c1c;
+}
+
+/* === Layouts === */
+.flex.gap-4.mb-6,
+.flex.gap-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* === Options Panel === */
+#options {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 2rem;
+  transition: background 0.3s ease;
+}
+
+#options:hover {
+  background: rgba(30, 41, 59, 0.95);
+}
+
+/* === Titles === */
+#modeTitle,
+#statusTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #93c5fd;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+/* === Inputs === */
+input[type="number"] {
+  border: none;
+  outline: none;
+  background: #f8fafc;
+  color: #111827;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  transition: box-shadow 0.2s ease;
+}
+
+input[type="number"]:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+
+/* === Flash Animation === */
+@keyframes flashSetup {
+  0%, 50%, 100% {
+    color: #fde047;
+  }
+  25%, 75% {
+    color: #f1f5f9;
+  }
+}
+
+@keyframes flashTime {
+  0%, 50%, 100% {
+    color: #4778fd;
+  }
+  25%, 75% {
+    color: #f1f5f9;
+  }
+}
+
+@keyframes flashAlert {
+  0%, 50%, 100% {
+    color: #fd4747;
+  }
+  25%, 75% {
+    color: #f1f5f9;
+  }
+}
+
+
+/* === Logout Button === */
+#options button[onclick*="logout"] {
+  background-color: #b91c1c;
+}
+
+#options button[onclick*="logout"]:hover {
+  background-color: #dc2626;
+}
